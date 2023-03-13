@@ -25,6 +25,25 @@ body {
     z-index: 100;
 }
 
+/* Estilize o botão de menu hambúrguer */
+.hamburger {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Oculte o menu nav por padrão */
+.navbar {
+  display: none;
+}
+
+/* Exiba o menu nav quando a classe show for adicionada */
+.navbar.show {
+  display: block;
+}
+
+
 .logo {
     font-size: 25px;
     color: #fff;
@@ -251,4 +270,15 @@ body {
     .home-content p {
         font-size: 14px;
     }
+}
+
+/* Oculte o botão de menu hambúrguer em telas maiores */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .navbar {
+    display: block;
+  }
 }
