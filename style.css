@@ -350,7 +350,7 @@ span {
     color: var(--second-bg-color);
 }
 
-.portfolio-layer p.word {
+.portfolio-layer div p.word {
     font-size: 1rem !important;
 }
 
